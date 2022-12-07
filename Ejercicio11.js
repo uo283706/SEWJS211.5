@@ -29,7 +29,6 @@ class Geolocalizacion{
                 handleLocationError(true, infoWindow, mapaGeoposicionado.getCenter());
               });
             } else {
-              // Browser doesn't support Geolocation
               handleLocationError(false, infoWindow, mapaGeoposicionado.getCenter());
             }
 
@@ -38,8 +37,8 @@ class Geolocalizacion{
     handleLocationError(browserHasGeolocation, infoWindow, pos) {
         infoWindow.setPosition(pos);
         infoWindow.setContent(browserHasGeolocation ?
-                              'Error: Ha fallado la geolocalización' :
-                              'Error: Su navegador no soporta geolocalización');
+                              'Error: Fallo de la geolocalización' :
+                              'Error: No se soporta la geolocalización');
         infoWindow.open(mapaGeoposicionado);
     }
 
