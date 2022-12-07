@@ -3,7 +3,7 @@
     Descripcion de los estilos
     Estilo para la página principal del sitio web
 **********************************************/
-/*Especificidad:(0,0,1) A=0 B=0 C=1*/
+
 #mapa {
     width:100%; 
     height:50vw; 
@@ -15,7 +15,7 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: crimson;
-    color: white;
+    color: black;
 }
 
 /*Especificidad:(0,0,1) A=0 B=0 C=1*/
@@ -25,7 +25,7 @@ h1{
     border-radius: 1.2em;
     border-width: 0.5em ;
     background-color: rgb(174, 174, 174);
-    color: white; 
+    color: black; 
 }
 
 h3{
